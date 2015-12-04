@@ -26,7 +26,7 @@ public class backend {
     @GET
     @Path("callback")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response Callback(int token) {
+    public Response Callback() {
         this.token=
         return Response
                 .status(200)
@@ -41,4 +41,16 @@ public class backend {
     public Response sendToken(@PathParam("t") String token){
         
     }
+    
+    @GET
+    @Path("authOK")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response authentificationOk() {
+        return Response
+                .status(200)
+                .type(MediaType.APPLICATION_JSON)
+                .entity("Vous êtes identifié")
+                .build();
+    }
+    
 }
