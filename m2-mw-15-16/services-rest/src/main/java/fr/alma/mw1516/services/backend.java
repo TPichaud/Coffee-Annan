@@ -35,6 +35,11 @@ public class backend {
     @Produces(MediaType.APPLICATION_JSON)
     public Response sendToken(@PathParam("t") String token){
         
+         return Response
+                .status(200)
+                .build();
+        
+        
     }
     
     @GET
@@ -45,6 +50,16 @@ public class backend {
                 .status(200)
                 .type(MediaType.APPLICATION_JSON)
                 .entity("Vous êtes identifié")
+                .build();
+    }
+    @GET
+    @Path("coffeServed")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response coffeServed() {
+        return Response
+                .status(200)
+                .type(MediaType.APPLICATION_JSON)
+                .entity("Votre café est servi")
                 .build();
     }
     
