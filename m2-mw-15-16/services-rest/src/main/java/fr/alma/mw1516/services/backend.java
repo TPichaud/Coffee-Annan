@@ -26,13 +26,8 @@ public class backend {
     @GET
     @Path("callback")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response Callback() {
-        this.token=
-        return Response
-                .status(200)
-                .type(MediaType.APPLICATION_JSON)
-                .entity("Token reçu")
-                .build();
+    public Response Callback(@PathParam("t") String token) {
+        return postToken(token);
     }
     
     @GET
