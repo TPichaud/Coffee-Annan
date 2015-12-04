@@ -1,19 +1,6 @@
 Projet Middleware pour le M2 ALMA 2015-2016
 ===========================================
 
-Diagramme pour l'authentification :
-http://tinyurl.com/p4f69bv
-
-Livrables
----------
-
-- Mardi 01/12 : contrats
-- Vendredi 04/12 : code
-
-mailto: thimel at codelutin.com
-
-Précisez à chaque fois sur quelle partie vous travaillez et la liste des personnes dans le groupe.
-
 Démarrage
 ---------
 
